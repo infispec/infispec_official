@@ -1,0 +1,214 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+body, h1, p{
+    margin: 0;
+    padding: 0;
+}
+p{
+    text-align: justify;
+    line-height: 25px;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Header styling */
+
+
+
+
+
+
+
+.button{
+    width: 200px;
+    height: 40px;  
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 13px 40px !important;
+    border: 1px solid #fff;
+    border-radius: 0px !important;
+    touch-action: manipulation;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Gilroy", sans-serif !important;
+}
+
+.button:hover{
+    background-color: black;
+    border-color: #000;
+    color: #fff;
+}
+
+
+.item{
+    background-color: #fff;
+    width: 150px;
+    height: 20px;
+    padding: 0.9rem;
+}
+
+.item a {
+    color: #000;
+    font-size:larger;
+    font-weight: 100;
+}
+
+.item:hover{
+    background-color: black;
+}
+
+.item:hover a{
+    color: #fff;
+}
+
+/* Page content container */
+.contain {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Job description */
+dl {
+    counter-reset: decimal;
+    line-height: 25px;
+}
+dl dd:before {
+    content: counter(decimal);
+    counter-increment: decimal;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-right: 20px;
+}
+dl dd {
+    margin: 0 0 20px;
+} 
+dl dd {
+    padding-left: 20px;
+}
+
+
+ul li{
+    line-height: 25px;
+}
+
+.description{
+    padding: 0rem 3rem;
+}
+
+.description-title{
+    padding: 0rem 2rem;
+}
+
+
+hr{
+    margin: 2rem 0rem;
+}
+
+
+/* Apply Now button */
+
+.apply-now{
+    text-align:center;
+}
+
+.apply-now button {
+    background-color: #229abb;
+    color: #fff;
+    width: 200px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 13px 40px !important;    
+    border-radius: 0px !important;
+}
+
+.apply-button {
+    text-align: center;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    font-weight: 10;
+    border: 1px solid #fff;
+}
+
+.apply-button:hover{
+    border: 1px solid #008F27;
+    background-color: #fff;
+    color: #008F27;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Copyright text styling */
+footer span {
+    font-size: 14px;
+}
+
+
+/* ------------------------------------- Responsive media ----------------------------------------- */
+
+@media screen and (min-width: 768px){
+    
+    .job-title{
+        padding: 0em 10em;
+    }
+
+
+    .job-title h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width:480px){
+    
+    .item {
+        width: 200px;
+        height: 30px;
+    }
+    .item a {
+        font-size: 1.8rem;
+    }
+    .job-title{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .job-title h1{
+        font-size: 70px;
+    }
+    .button {
+        width: 400px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    .apply-now button {
+        width: 100%;
+    }
+    .apply-button{
+        font-size: 1.8rem;
+    }
+}
